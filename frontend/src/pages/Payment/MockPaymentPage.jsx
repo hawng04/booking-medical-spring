@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { appointmentService } from "../../api/appointmentService"; 
-import { DollarSign, X, ArrowLeft } from 'lucide-react'; // Thêm ArrowLeft
+import { DollarSign, ArrowLeft } from 'lucide-react'; // Thêm ArrowLeft
 
 const MOCK_TIME_LIMIT = 300; 
 
@@ -16,7 +16,6 @@ const MockPaymentPage = () => {
     const [orderCode] = useState(`MOCK${Date.now().toString().slice(-6)}`); 
 
     const isMomo = paymentMethod === 'momo';
-    const isVnPay = paymentMethod === 'vnpay';
     
     
     const price = bookingPayload?.finalPrice || 0; 

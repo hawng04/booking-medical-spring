@@ -7,10 +7,10 @@ const PaymentMethodSelectionPage = () => {
     const navigate = useNavigate();
     const location = useLocation();
     
-    const { bookingPayload, redirectPath, hospital } = location.state || {}; 
+    const { bookingPayload, hospital } = location.state || {}; 
     
     const [selectedMethod, setSelectedMethod] = useState(null);
-    const [processing, setProcessing] = useState(false); 
+    const [ setProcessing] = useState(false); 
     
     if (!bookingPayload || !hospital) {
         return <div className="text-red-600 p-10">Lỗi: Thiếu dữ liệu đơn hàng cần thiết.</div>;

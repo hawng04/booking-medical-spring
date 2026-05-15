@@ -203,7 +203,6 @@ const Step3Info = ({ fullName, phone, password }) => {
     console.log("Dữ liệu chuẩn bị gửi đi:", registrationData);
 
     try {
-      const response = await registerUser(registrationData); 
 
       alert("Đăng ký thành công! Vui lòng đăng nhập.");
       navigate('/login'); // Chuyển đến trang đăng nhập
