@@ -17,17 +17,18 @@ const PaymentStatus = () => {
     const [error, setError] = useState(null);
 
     // --- HELPER: Lấy Tham số từ URL ---
-    const getQueryParams = () => {
-        const params = new URLSearchParams(location.search);
-        return {
-            status: params.get('status'),
-            orderId: params.get('orderId'),
-            message: params.get('message') 
-        };
-    };
+    
 
     // --- LOGIC FETCH CHI TIẾT ĐƠN HÀNG ---
     useEffect(() => {
+        const getQueryParams = () => {
+            const params = new URLSearchParams(location.search);
+            return {
+                status: params.get('status'),
+                orderId: params.get('orderId'),
+                message: params.get('message') 
+            };
+        };
         const { status, orderId, message } = getQueryParams();
         
         setTransactionStatus(status);

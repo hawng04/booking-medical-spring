@@ -27,7 +27,6 @@ import CompleteBookingHospital from "../pages/Booking/CompleteBookingHospital";
 
 import MockPaymentPage from "../pages/Payment/MockPaymentPage";
 import PaymentMethodSelectionPage from "../pages/Payment/PaymentMethodSelectionPage";
-import PaymentStatus from "../pages/Payment/PaymentStatus";
 import CompletePayment from "../pages/Payment/CompletePayment";
 
 // === IMPORT CÁC TRANG DASHBOARD  ===

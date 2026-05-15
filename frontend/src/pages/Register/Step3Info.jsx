@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from "react"; 
 import { useNavigate } from 'react-router-dom';
-import { registerUser } from '../../api/auth';
 import axios from 'axios';
 
 // === PHẦN DÀNH CHO CÁC COMPONENT CON (để code chính gọn gàng) ===
